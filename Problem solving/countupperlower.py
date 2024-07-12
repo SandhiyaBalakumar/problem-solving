@@ -5,6 +5,7 @@ Low_count=0
 Alpha_count=0
 Digit_count=0
 Space_count=0
+Special_count=0
 
 for x in R_file.read():
     if x.isupper():
@@ -16,12 +17,15 @@ for x in R_file.read():
     if x.isdigit():
         Digit_count+=1   
     if x.isspace():
-        Space_count+=1    
+        Space_count+=1  
+    else:
+        Special_count=Special_count+=1
 print("Upper Letters Found :",Cap_count)
 print("Lower Letters Found :",Low_count)
 print("Alphabetics Found :",Alpha_count)
 print("Digits Found :",Digit_count)
 print("Spaces Found :",Space_count)
+print("Symbols Found :",Special_count)
 
 
 
